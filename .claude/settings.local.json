@@ -44,7 +44,9 @@
       "Bash(npx vite build)",
       "Bash(timeout 8 npx vite --host)",
       "Bash(php artisan tinker --execute=\"App\\\\Models\\\\User::create\\([''name'' => ''Admin'', ''email'' => ''admin@admin.com'', ''password'' => bcrypt\\(''admin''\\)]\\); echo ''User created.'';\")",
-      "Bash(curl -s -X POST http://localhost:8000/api/auth/login -H \"Content-Type: application/json\" -d '{\"\"email\"\":\"\"admin@admin.com\"\",\"\"password\"\":\"\"admin\"\"}')"
+      "Bash(curl -s -X POST http://localhost:8000/api/auth/login -H \"Content-Type: application/json\" -d '{\"\"email\"\":\"\"admin@admin.com\"\",\"\"password\"\":\"\"admin\"\"}')",
+      "Bash(find /d/Project/laravel-php/backend/tests -type f -name *.php)",
+      "Bash(xargs head:*)"
     ]
   }
 }
