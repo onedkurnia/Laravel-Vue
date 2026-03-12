@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(php -v)",
+      "Bash(composer --version)",
+      "Bash(where composer)",
+      "Read(//c/ProgramData/chocolatey/bin/**)",
+      "Bash(php -r \"echo ini_get\\(''extension_dir''\\);\")",
+      "Read(//c/Users/user/AppData/Roaming/**)",
+      "Bash(where composer.phar)",
+      "Bash(where composer.bat)",
+      "Bash(php -r \"copy\\(''https://getcomposer.org/installer'', ''composer-setup.php''\\);\")",
+      "Bash(php composer-setup.php)",
+      "Bash(php -r \"unlink\\(''composer-setup.php''\\);\")",
+      "Bash(php composer.phar create-project laravel/laravel tmp-laravel --prefer-dist)",
+      "Bash(shopt -s dotglob)",
+      "Bash(mv tmp-laravel/* .)",
+      "Bash(rmdir tmp-laravel)",
+      "Bash(cp -r tmp-laravel/* .)",
+      "Bash(cp -r tmp-laravel/.* .)",
+      "Bash(rm -rf tmp-laravel)",
+      "Bash(php composer.phar require laravel/sanctum)",
+      "Bash(rm -rf vendor)",
+      "Bash(php composer.phar install)",
+      "Bash(php artisan --version)",
+      "Bash(php artisan install:api)",
+      "Bash(php artisan key:generate)",
+      "Bash(php artisan migrate --force)",
+      "Bash(php artisan route:list)",
+      "Bash(php artisan optimize:clear)",
+      "Bash(php artisan test)",
+      "Bash(curl -s http://localhost:8000/api/auth/login -X POST -H \"Accept: application/json\" -H \"Content-Type: application/json\" -d '{\"\"email\"\":\"\"test@test.com\"\",\"\"password\"\":\"\"wrong\"\"}')",
+      "Bash(curl -s http://localhost:8000/api/nonexistent -H \"Accept: application/json\")",
+      "Bash(curl -s http://localhost:8000/api/auth/me -H \"Accept: application/json\")",
+      "Bash(pkill -f \"artisan serve\")",
+      "Bash(php artisan serve)"
+    ]
+  }
+}
